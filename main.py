@@ -1,4 +1,4 @@
-# Function to convert a number in a specified base to a number in base 10
+#  Convert a number from a specified base system to decimal system
 def convert_to_decimal(number, base):
   decimal_value = 0
   power = 0
@@ -9,7 +9,7 @@ def convert_to_decimal(number, base):
       power += 1
   return decimal_value
 
-# Function to convert decimal number into the new final base 
+# Convert a decimal number into a specified base system
 def convert_from_decimal(decimal_number, new_base):
   new_base_number = 0
   power = 0
@@ -22,7 +22,7 @@ def convert_from_decimal(decimal_number, new_base):
 
 continue_program = True
 
-# While loop to keep asking user for number, original base, and new base for the number and executing the program until they choose to stop
+# While loop that converts number to decimal then decimal number to desired output
 while continue_program:
   original_number = int(input("Enter the original number: "))
   original_base = int(input("Enter the original base: "))
